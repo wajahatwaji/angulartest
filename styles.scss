@@ -1,0 +1,463 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('assets/fonts/ProximaNova-BoldIt.woff2') format('woff2'),
+        url('assets/fonts/ProximaNova-BoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('assets/fonts/ProximaNova-SemiboldIt.woff2') format('woff2'),
+        url('assets/fonts/ProximaNova-SemiboldIt.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Bl';
+    src: url('assets/fonts/ProximaNova-Black.woff2') format('woff2'),
+        url('assets/fonts/ProximaNova-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('assets/fonts/ProximaNova-RegularIt.woff2') format('woff2'),
+        url('assets/fonts/ProximaNova-RegularIt.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('assets/fonts/ProximaNova-Semibold.woff2') format('woff2'),
+        url('assets/fonts/ProximaNova-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('assets/fonts/ProximaNova-Light.woff2') format('woff2'),
+        url('assets/fonts/ProximaNova-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('assets/fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('assets/fonts/ProximaNova-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Bl';
+    src: url('assets/fonts/ProximaNova-BlackIt.woff2') format('woff2'),
+        url('assets/fonts/ProximaNova-BlackIt.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('assets/fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('assets/fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Th';
+    src: url('assets/fonts/ProximaNova-ExtrabldIt.woff2') format('woff2'),
+        url('assets/fonts/ProximaNova-ExtrabldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Th';
+    src: url('assets/fonts/ProximaNova-Extrabld.woff2') format('woff2'),
+        url('assets/fonts/ProximaNova-Extrabld.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('assets/fonts/ProximaNova-LightIt.woff2') format('woff2'),
+        url('assets/fonts/ProximaNova-LightIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Th';
+    src: url('assets/fonts/ProximaNova-Thin.woff2') format('woff2'),
+        url('assets/fonts/ProximaNova-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Th';
+    src: url('assets/fonts/ProximaNova-ThinIt.woff2') format('woff2'),
+        url('assets/fonts/ProximaNova-ThinIt.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Proxima Nova Rg';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+span,
+a,
+p {
+    padding: 0;
+    margin: 0;
+    letter-spacing: initial;
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+    outline: none;
+    border: 0;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a,
+a:focus {
+    outline: none;
+}
+
+button:hover {
+    transition: all .5s ease;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+button:focus,
+a:focus {
+    outline: none;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.container {
+    max-width: 1040px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+/* --------  Header CSS Starts Here ---------*/
+.top-bar {
+    background: #23123A;
+    padding: 28px 0;
+}
+.header-nav nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+.header-nav nav ul li {
+    width: 33.33%;
+    text-align: center;
+}
+.header-nav nav ul li:nth-child(2) {
+    border-left: thin solid #EDEFF0;
+    border-right: thin solid #EDEFF0;
+}
+
+.header-nav nav ul li a {
+    font-family: 'Proxima Nova Rg';
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+    padding: 15px 0;
+}
+/* --------  Header CSS Ends Here ---------*/
+
+
+/* --------  Banner CSS Starts Here ---------*/
+.banner {
+    background: #23123A url(assets/images/banner-bg.png) no-repeat center;
+    background-size: cover;
+    height: 550px;
+}
+.banner h1 {
+    font-family: 'Proxima Nova Rg';
+    font-weight: bold;
+    font-size: 102px;
+    color: #fff;
+    padding: 25px 0;
+    line-height: 1.2;
+}
+/* --------  Banner CSS Ends Here ---------*/
+
+
+/* --------  Opportunity CSS Starts Here ---------*/
+.opportunity {
+    background: #F1F5F8;
+    padding: 50px 0;
+}
+.opportunity h2 {
+    font-family: 'Proxima Nova Rg';
+    font-weight: bold;
+    color: #373737;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+.opportunity .inner {
+    background: #fff;
+    padding: 40px 70px;
+}
+.opportunity .inner .detail {
+    margin-bottom: 35px;
+}
+.opportunity .inner .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.opportunity .inner .head h3 {
+    font-family: 'Proxima Nova Rg';
+    font-weight: normal;
+    color: #373737;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+.opportunity .inner .head .reviews {
+    display: flex;
+    align-items: flex-start;
+}
+.opportunity .inner .head .reviews span,
+.opportunity .inner .card-info-detail .card-text span {
+    font-family: 'Proxima Nova Rg';
+    font-weight: normal;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.2;
+    margin: 0 10px 25px;
+    display: inline-block;
+}
+.opportunity .inner .info-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.opportunity .inner .info-wrap .card-info {
+    width: 270px;
+}
+.opportunity .inner .info-wrap .card-info-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.opportunity .inner .info-wrap .card-info-detail .card {
+    width: 153px;
+}
+.opportunity .inner .info-wrap .card-info-detail .card-text {
+    width: 100px;
+    text-align: center;
+}
+.opportunity .inner .card-info-detail .card-text span {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.opportunity .inner .card-info-detail .card-text a {
+    font-family: 'Proxima Nova Rg';
+    font-weight: normal;
+    font-size: 15px;
+    color: #fff;
+    background: #59D8D1;
+    line-height: 1.2;
+    padding: 6px 14px;
+    border-radius: 25px;
+    transition: all ease 0.5s;
+}
+.opportunity .inner .card-info-detail .card-text a:hover {
+    background: #21cbc1;
+}
+.opportunity .inner .info-wrap .apply {
+    font-family: 'Proxima Nova Rg';
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    background: #FA6E3D;
+    line-height: 1.2;
+    padding: 11px 10px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    transition: all ease 0.5s;
+}
+.opportunity .inner .info-wrap .card-info .apply:hover {
+    background: #cd4b1e;
+}
+.opportunity .inner .info-wrap .info-list {
+    width: calc(100% - 310px);
+}
+.opportunity .inner .info-wrap .info-list .apply {
+    display: none;
+}
+.opportunity .inner .info-wrap .info-list ul li {
+    font-family: 'Proxima Nova Rg';
+    font-weight: normal;
+    font-size: 18px;
+    color: #000;
+    list-style-type: disc;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+.opportunity .inner .info-wrap .info-list ul li a {
+    color: #1194F6;
+}
+.opportunity .inner .see-details {
+    border-top: 2px solid #7F949C;
+    padding-top: 20px;
+}
+.opportunity .inner .see-details a {
+    font-family: 'Proxima Nova Rg';
+    font-weight: normal;
+    font-size: 18px;
+    color: #1194F6;
+    line-height: 1.2;
+}
+
+/* --------  Responsive CSS Starts Here ---------*/
+@media(max-width: 1199px) {
+    .container {
+        padding: 0;
+    }
+}
+@media(max-width: 1023px) {
+    .banner h1 {
+        font-size: 82px;
+    }
+}
+@media(max-width: 767px) {
+    .banner {
+        background: #23123A url(assets/images/banner-mobile.png) no-repeat center bottom;
+        background-size: 100% auto;
+        height: 410px;
+    }
+    .banner h1 {
+        padding: 30px 55px 30px 30px;
+        font-size: 54px;
+        line-height: 1.1;
+    }
+    .opportunity {
+        padding: 30px 0 0;
+    }
+    .opportunity h2 {
+        padding: 0 25px 0 15px;
+        font-size: 18px;
+    }
+    .opportunity .inner {
+        padding: 0;
+    }
+    .opportunity .inner .detail {
+        padding: 20px 15px;
+        margin-bottom: 0;
+    }
+    .opportunity .inner .head h3 {
+        font-size: 17px;
+    }
+    .opportunity .inner .head .reviews,
+    .opportunity .inner .info-wrap .card-info .apply {
+        display: none;
+    }
+    .opportunity .inner .info-wrap .card-info,
+    .opportunity .inner .info-wrap .info-list {
+        width: 100%;
+    }
+    .opportunity .inner .info-wrap .card-info-detail .card-text {
+        width: calc(100% - 170px);
+    }
+    .opportunity .inner .info-wrap .info-list ul li,
+    .opportunity .inner .see-details a {
+        font-size: 15px;
+    }
+    .opportunity .inner .info-wrap .info-list ul {
+        margin: 0 15px;
+    }
+    .opportunity .inner .see-details {
+        padding: 15px 15px 20px;
+    }
+    .opportunity .inner .info-wrap .info-list .apply {
+        display: block;
+    }
+}
+
+@media(max-width: 374px) {
+    .banner h1 {
+        font-size: 44px;
+    }
+}
+/* --------  Responsive CSS Ends Here ---------*/
